@@ -1,0 +1,14 @@
+prefix=/disk4/qt/qtmy
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 DBus
+Description: Qt DBus module
+Version: 5.6.0
+Libs: -L${libdir} -lQt5DBus 
+Libs.private: -L/usr/local/tslib/lib -L/disk4/qt/qtmy/lib -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtDBus -I${includedir}
+Requires: Qt5Core
+

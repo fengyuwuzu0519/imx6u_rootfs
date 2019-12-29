@@ -1,0 +1,14 @@
+prefix=/disk4/qt/qtmy
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Nfc
+Description: Qt Nfc module
+Version: 5.6.0
+Libs: -L${libdir} -lQt5Nfc 
+Libs.private: -L/usr/local/tslib/lib -L/disk4/qt/qtmy/lib -lQt5DBus -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtNfc -I${includedir}
+Requires: Qt5Core
+

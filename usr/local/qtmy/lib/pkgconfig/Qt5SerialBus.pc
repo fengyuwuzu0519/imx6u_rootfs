@@ -1,0 +1,14 @@
+prefix=/disk4/qt/qtmy
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 SerialBus
+Description: Qt SerialBus module
+Version: 5.6.0
+Libs: -L${libdir} -lQt5SerialBus 
+Libs.private: -L/usr/local/tslib/lib -L/disk4/qt/qtmy/lib -lQt5Network -L/disk4/qt/qtmy/lib -lQt5SerialPort -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtSerialBus -I${includedir}
+Requires: Qt5Core Qt5Network Qt5SerialPort
+

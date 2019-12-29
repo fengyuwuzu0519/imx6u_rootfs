@@ -1,0 +1,14 @@
+prefix=/disk4/qt/qtmy
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 ScriptTools
+Description: Qt ScriptTools module
+Version: 5.6.0
+Libs: -L${libdir} -lQt5ScriptTools 
+Libs.private: -L/usr/local/tslib/lib -L/disk4/qt/qtmy/lib -lQt5Core -lpthread -lQt5Widgets -lQt5Gui -L/disk4/qt/qtmy/lib -lQt5Script -lQt5Core  
+Cflags: -I${includedir}/QtScriptTools -I${includedir}
+Requires: Qt5Core
+
