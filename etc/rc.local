@@ -1,0 +1,2 @@
+#!/bin/sh
+. /etc/profile //注意.后边有个空格！
